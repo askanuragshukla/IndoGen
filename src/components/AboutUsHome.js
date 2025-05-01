@@ -16,14 +16,20 @@ const statVariants = {
 
 const AboutUsHome = () => {
   const navigate = useNavigate();
-  
+
   return (
-    <Box sx={{ display: "flex", flexDirection: "row", width: "100%" }}>
-      {/* Main Light Beige Section */}
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+        width: "100%",
+      }}
+    >
+      {/* Main Content Section */}
       <Box
         sx={{
-          backgroundColor: "white", // Light beige
-          color: "black", // Dark green text for contrast
+          backgroundColor: "white",
+          color: "black",
           flex: 1,
           padding: { xs: 3, md: 6 },
         }}
@@ -35,50 +41,79 @@ const AboutUsHome = () => {
         </motion.div>
 
         <motion.div initial="hidden" animate="visible" variants={textVariants}>
-          <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+          <Typography
+            variant="h3"
+            sx={{ fontWeight: "bold", fontSize: { xs: "2rem", md: "3rem" } }}
+          >
             About us
           </Typography>
         </motion.div>
 
         <motion.div initial="hidden" animate="visible" variants={textVariants}>
-          <Typography variant="body1" sx={{ mt: 2, mb: 4 }}>
-          IndoZen Global is a dynamic exporter dedicated to delivering high-quality
-food products across the globe. Based in India, we specialize in a wide range
-of onion powders and premium Makhana varieties, meeting the demands of
-international markets with integrity and excellence.
+          <Typography
+            variant="body1"
+            sx={{ mt: 2, mb: 4, fontSize: { xs: "0.95rem", md: "1rem" } }}
+          >
+            Indozen Global is a dynamic exporter dedicated to delivering
+            high-quality food products across the globe. Based in India, we
+            specialize in a wide range of onion powders and premium Makhana
+            varieties, meeting international market demands with integrity and
+            excellence.
           </Typography>
         </motion.div>
 
         <motion.div initial="hidden" animate="visible" variants={textVariants}>
-          <Typography variant="body1" sx={{ mt: 2, mb: 4 }}>
-            We have over 3 decades experience in sourcing, merchandising, buying & trading commodities across various product categories. As a leading Merchant Exporter, we are a team of passionate business professionals, with a hands-on approach towards business. Our endeavour is to keep up to the promise & deliver beyond satisfaction.
+          <Typography
+            variant="body1"
+            sx={{ mt: 2, mb: 4, fontSize: { xs: "0.95rem", md: "1rem" } }}
+          >
+            With over three decades of experience in sourcing, merchandising,
+            buying, and trading commodities across various categories, we are a
+            leading merchant exporter. Our team of passionate business
+            professionals takes a hands-on approach to business, consistently
+            striving to keep promises and deliver beyond expectations.
           </Typography>
         </motion.div>
 
         {/* Stats Section */}
         <Grid container spacing={4} alignItems="center">
-          {[ 
+          {[
             { value: 50, label: "Countries We Export To" },
             { value: 1000, label: "Happy Clients Worldwide" },
             { value: 500, label: "Successful Shipments" },
           ].map((stat, index) => (
             <Grid item xs={12} sm={4} key={index}>
               <motion.div initial="hidden" animate="visible" variants={statVariants}>
-                <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    fontWeight: "bold",
+                    fontSize: { xs: "1.8rem", md: "2rem" },
+                  }}
+                >
                   <CountUp start={0} end={stat.value} duration={2} />+
                 </Typography>
-                <Typography variant="body2">{stat.label}</Typography>
+                <Typography variant="body2" sx={{ fontSize: { xs: "0.9rem" } }}>
+                  {stat.label}
+                </Typography>
               </motion.div>
             </Grid>
           ))}
+
           {/* About Us Button */}
           <Grid item xs={12} sm={4}>
-            <Button 
-              variant="contained" 
-              color="white" 
-              
+            <Button
+              variant="contained"
               onClick={() => navigate("/about-us")}
-              sx={{ mt: 2,borderRadius:25,backgroundColor:'black',color:'white',padding:2 }}
+              sx={{
+                mt: 2,
+                borderRadius: 25,
+                backgroundColor: "black",
+                color: "white",
+                paddingX: 3,
+                paddingY: 1.5,
+                fontSize: { xs: "0.8rem", md: "1rem" },
+              }}
             >
               Read more About Us
             </Button>
@@ -86,24 +121,26 @@ international markets with integrity and excellence.
         </Grid>
       </Box>
 
-      {/* Sidebar with Vertical Text */}
+      {/* Vertical Sidebar Text */}
       <Box
         sx={{
-          backgroundColor: "white", // Slightly darker beige
-          width: { xs: "40px", md: "100px" },
-          display: "flex",
+          backgroundColor: "white",
+          width: { xs: "0px", md: "100px" },
+          display: { xs: "none", md: "flex" },
           alignItems: "center",
           justifyContent: "center",
-          borderRight:'3px solid',
-          textAlign: "center",
+          borderRight: "3px solid",
           writingMode: "vertical-rl",
           transform: "rotate(180deg)",
           padding: 2,
         }}
       >
         <motion.div initial="hidden" animate="visible" variants={textVariants}>
-          <Typography variant="h3" sx={{ fontWeight: "bold", color: "#E0A800" }}>
-            I N D O G E N
+          <Typography
+            variant="h4"
+            sx={{ fontWeight: "bold", color: "#E0A800", letterSpacing: "0.2em" }}
+          >
+            INDOZEN
           </Typography>
         </motion.div>
       </Box>

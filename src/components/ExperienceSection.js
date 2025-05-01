@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useEffect, useState } from "react";
 import { Box, Typography, Grid } from "@mui/material";
 import counter1 from "./images/counter1.png";
@@ -39,16 +35,35 @@ const ExperienceSection = () => {
   }, []);
 
   return (
-    <Box sx={{ backgroundColor: "black", py: 4, textAlign: "center" }}>
+    <Box sx={{ backgroundColor: "black", py: { xs: 4, md: 6 }, textAlign: "center" }}>
       <Grid container spacing={4} justifyContent="center">
         {stats.map((stat, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              {/* <img src={stat.img} alt={stat.label} style={{ width: 80, height: 80 }} /> */}
-              <Typography variant="h5" sx={{ fontWeight: "bold", color: "white", mt: 2 }}>
+              <Box
+                component="img"
+                src={stat.img}
+                alt={stat.label}
+                sx={{ width: { xs: 50, sm: 70, md: 80 }, height: "auto" }}
+              />
+              <Typography
+                variant="h4"
+                sx={{
+                  fontWeight: "bold",
+                  color: "white",
+                  mt: 2,
+                  fontSize: { xs: "1.5rem", sm: "2rem", md: "2.2rem" },
+                }}
+              >
                 {counts[index]}+
               </Typography>
-              <Typography variant="body1" sx={{ color: "white" }}>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: "white",
+                  fontSize: { xs: "0.9rem", sm: "1rem" },
+                }}
+              >
                 {stat.label}
               </Typography>
             </Box>

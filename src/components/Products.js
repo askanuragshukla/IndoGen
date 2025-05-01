@@ -33,7 +33,13 @@ import digitalmarketing from './images/digitalmarketing.jpg'
 import whiteonionpowderimg from './images/whiteonionpowder.webp'
 import rawmakhanaimg from './images/Makhana-Namkeen-2-3.jpg'
 import flavourmakhana from './images/flvrmkhanahdwlpr.jpg'
-
+import PeriPerioMakhana from "../components/images/PeriPerioMakhana.webp";
+import PudinaMakahana from "../components/images/PudinaMakahana.jpg";
+import RoastedMakahana from "../components/images/RoastedMakahana.webp";
+import phoolmakhana from "../components/images/phoolmakhana.jpg";
+import SweetMakhana from "../components/images/SweetMakhana.jpg";
+import RedAndPinkPowder from "../components/images/RedAndPinkPowder.jpg";
+import DehydratedWhiteOnionPowder from "../components/images/DehydratedwhiteOnionPowder.jpg";
 
 const Products = () => {
   
@@ -66,7 +72,7 @@ const SectionTitle = styled(Typography)({
       <div >
        <Background>
                <SectionTitle style={{color:'white'}}>
-                 Why INDOGEN?
+                 Our Products and Brouchers
                </SectionTitle>
                <Typography sx={{ textAlign: 'center', fontSize: '1.2rem', maxWidth: '800px', marginBottom: '30px',color:'white' }}>
                  We bridge the gap between international markets, offering seamless export solutions that ensure timely delivery, cost-efficiency, and high-quality service.
@@ -78,7 +84,7 @@ const SectionTitle = styled(Typography)({
 
 <Container maxWidth="lg" sx={{ py: 5 }}>
   <Typography variant='h2' style={{textAlign:'center', fontWeight:'bold',marginTop:3,marginBottom:2}}>Our Offerings </Typography>
-  <Typography variant='p' style={{textAlign:'center', fontWeight:'bold',marginTop:3,marginBottom:20,color:'grey',fontFamily: "'Roboto', sans-serif" }}>While we focus on key products, wherein we have our expertise, we are always open to source new & innovative products for our clients, from across all industries. Indogen can procure any product, irrespective of the region / country, as we are backed by a solid sourcing back ground. We have a solid network & database of suppliers from all geographies. You name it, we source it </Typography>
+  <Typography variant='p' style={{textAlign:'center', fontWeight:'bold',marginTop:3,marginBottom:20,color:'grey',fontFamily: "'Roboto', sans-serif" }}>While we focus on key products, wherein we have our expertise, we are always open to source new & innovative products for our clients, from across all industries. Indozen can procure any product, irrespective of the region / country, as we are backed by a solid sourcing back ground. We have a solid network & database of suppliers from all geographies. You name it, we source it </Typography>
       <Grid container spacing={4} sx={{paddingTop:10}}>
         {servicesData.map((service) => (
           <Grid item xs={12} sm={6} md={4} key={service.id}>
@@ -148,22 +154,7 @@ const SectionTitle = styled(Typography)({
                 >
                   {service.description}
                 </Typography>
-                {/* <Button
-                  variant="contained"
-                  size="small"
-                  sx={{
-                    textTransform: 'none',
-                    backgroundColor: '#FF665A',
-                    color: '#fff',
-                    borderRadius: '20px',
-                    px: 3,
-                    '&:hover': {
-                      backgroundColor: '#E5554D',
-                    },
-                  }}
-                >
-                  View More
-                </Button> */}
+              
               </CardContent>
             </Card>
           </Grid>
@@ -181,62 +172,52 @@ const SectionTitle = styled(Typography)({
 const servicesData = [
   {
     id: 1,
-    title: 'White  Powder',
-    description: 'A fine, aromatic powder made from dehydrated white onion, perfect for enhancing flavor in dishes.',
-    image: whiteonionpowderimg,
-    icon: <LocalFloristIcon />, 
+    title: "Peri Peri Makhana",
+    description: "Finest quality roasted makhanas flavored with chef’s special Peri Peri seasoning.",
+    image: PeriPerioMakhana,
+    icon: <LocalFloristIcon />,
   },
   {
     id: 2,
-    title: 'Red Onion Powder',
-    description: 'A versatile spice made from dehydrated onions, ideal for adding depth to recipes.',
-    image: onionpowderimg,
-    icon: <RiceBowlIcon />, 
+    title: "Mint / Pudina Makhana",
+    description: "Enjoy our roasted makhanas with a refreshing touch of mint flavour.",
+    image: PudinaMakahana,
+    icon: <RiceBowlIcon />,
   },
   {
     id: 3,
-    title: 'Falvour Makhanas',
-    description: 'A delightful collection of flavours all the way from india. we deal in fresh Mint, Tomato, peri Peri etc.., flavours',
-    image: flavourmakhana,
-    icon: <GrainIcon />, 
+    title: "Roasted Makhana",
+    description: "Classic roasted makhanas, prepared with care for a wholesome snack.",
+    image: RoastedMakahana,
+    icon: <GrainIcon />,
   },
   {
     id: 4,
-    title: 'Raw Makhana',
-    description: 'Fresh roasted raw Makhana commonly also known as Fox nuts all the way from india',
-    image: rawmakhanaimg,
-    icon: <GrainIcon />, 
-  },
-  
-];
-const servicesData2 = [
-  {
-    id: 1,
-    title: 'Website Design',
-    description: 'Craft visually stunning and user-friendly website designs that captivate your audience.',
-    image: webdesign,
-    icon: <LocalFloristIcon />, 
+    title: "Phool Makhana",
+    description: "Farm-fresh, unroasted phool makhanas of the finest quality.",
+    image: phoolmakhana,
+    icon: <GrainIcon />,
   },
   {
-    id: 2,
-    title: 'Website Development',
-    description: 'Develop robust and scalable websites with the latest technologies and frameworks.',
-    image: webdevelopment,
-    icon: <RiceBowlIcon />, 
+    id: 5,
+    title: "Sweet Makhana",
+    description: "Delightful sweet-flavored makhanas — a perfect savory treat.",
+    image: SweetMakhana,
+    icon: <GrainIcon />,
   },
   {
-    id: 3,
-    title: 'Logo Design',
-    description: 'Create unique and memorable logos that represent your brand identity.',
-    image: logodesign,
-    icon: <GrainIcon />, 
+    id: 6,
+    title: "Dehydrated Red & Pink Onion Powder",
+    description: "High-quality, organic dehydrated red and pink onion powders.",
+    image: RedAndPinkPowder,
+    icon: <RiceBowlIcon />,
   },
   {
-    id: 4,
-    title: 'Digital Marketing',
-    description: 'Boost your online presence and reach your target audience through effective digital marketing strategies.',
-    image: digitalmarketing,
-    icon: <GrainIcon />, 
+    id: 7,
+    title: "Dehydrated White Onion Powder",
+    description: "Premium-grade, organic white onion powder for global trade.",
+    image: DehydratedWhiteOnionPowder,
+    icon: <RiceBowlIcon />,
   },
 ];
 

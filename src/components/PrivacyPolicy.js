@@ -175,7 +175,7 @@ const PrivacyPolicy = () => {
         Privacy Policy
       </Typography>
       <Typography variant="body1" sx={{ textAlign: "center", marginBottom: "30px", color: "text.secondary" }}>
-        At INDOGEN, we respect your privacy and are committed to protecting any personal information you provide while using our website www.INDOGEN.com. This Privacy Policy outlines what data we collect, how we use it, and your rights regarding your information.
+        At Indozen, we respect your privacy and are committed to protecting any personal information you provide while using our website www.Indozen.com. This Privacy Policy outlines what data we collect, how we use it, and your rights regarding your information.
       </Typography>
       <Box sx={{ flexGrow: 1, p: 4 }}>
         <Grid container spacing={4}>
@@ -279,7 +279,7 @@ const PrivacyPolicy = () => {
               If you have any questions or concerns about this Privacy Policy, please contact us at:
             </Typography>
             <Typography variant="body1">
-              📧 Email: info@INDOGEN.com
+              📧 Email: info@Indozen.com
             </Typography>
             <Typography variant="body1">
               📍 Address: Navi Mumbai, Maharashtra, India

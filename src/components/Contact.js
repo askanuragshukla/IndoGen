@@ -195,15 +195,15 @@ const Contact = () => {
   <InfoRow>
     <BusinessIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      INDOGEN International
+      Indozen International
     </Typography>
   </InfoRow>
-  <InfoRow>
+  {/* <InfoRow>
     <Person2Rounded />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
       Owner Name (CEO)
     </Typography>
-  </InfoRow>
+  </InfoRow> */}
   <InfoRow>
     <MailOutlineIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
@@ -219,14 +219,15 @@ const Contact = () => {
   <InfoRow>
     <LocationOnIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      Indogen's office address
+      Indozen's office address
     </Typography>
   </InfoRow>
   <InfoRow>
     <LanguageSharp />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      <a href="https://www.shreesadgurutraders.com" style={{ color: "#e0e0e0", textDecoration: "none" }}>
-        www.shreesadgurutraders.com
+      <a href="www.indozenglobal.com" style={{ color: "#e0e0e0", textDecoration: "none" }}>
+      www.indozenglobal.com
+
       </a>
     </Typography>
   </InfoRow>

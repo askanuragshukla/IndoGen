@@ -1,126 +1,68 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 
 const BusinessCard = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const cardItem = (IconComponent, title, value) => (
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        mb: { xs: 3, sm: 0 },
+        width: { xs: "100%", sm: "auto" },
+      }}
+    >
+      <Box
+        sx={{
+          backgroundColor: "#222",
+          borderRadius: "50%",
+          width: 60,
+          height: 60,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginRight: 2,
+          flexShrink: 0,
+        }}
+      >
+        <IconComponent fontSize="large" style={{ color: "white" }} />
+      </Box>
+      <Box>
+        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+          {title}
+        </Typography>
+        <Typography variant="body2">{value}</Typography>
+      </Box>
+    </Box>
+  );
+
   return (
     <Box
       sx={{
         display: "flex",
+        flexDirection: { xs: "column", sm: "row" },
         justifyContent: "space-around",
         alignItems: "center",
         backgroundColor: "black",
-        borderRadius:25,
-        marginBottom:10,
-        marginTop:10,
+        borderRadius: 4,
+        marginY: 5,
         color: "white",
-        padding: 4,
-        fontFamily: "Arial, sans-serif",
+        padding: { xs: 3, sm: 4 },
+        textAlign: { xs: "center", sm: "left" },
+        gap: { xs: 2, sm: 0 },
+        flexWrap: "wrap",
       }}
     >
-      {/* Address */}
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Box
-          sx={{
-            backgroundColor: "#222",
-            borderRadius: "50%",
-            width: 60,
-            height: 60,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginRight: 2,
-          }}
-        >
-          <LocationOnIcon fontSize="large" style={{ color: "white" }} />
-        </Box>
-        <Box>
-          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-            Address
-          </Typography>
-          <Typography variant="body2">
-          www.indozenglobal.com
-
-          </Typography>
-        </Box>
-      </Box>
-
-      {/* Contact */}
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Box
-          sx={{
-            backgroundColor: "#222",
-            borderRadius: "50%",
-            width: 60,
-            height: 60,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginRight: 2,
-          }}
-        >
-          <CallIcon fontSize="large" style={{ color: "white" }} />
-        </Box>
-        <Box>
-          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-            Contact
-          </Typography>
-          <Typography variant="body2">+91 8828281064</Typography>
-        </Box>
-      </Box>
-
-      {/* Email */}
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Box
-          sx={{
-            backgroundColor: "#222",
-            borderRadius: "50%",
-            width: 60,
-            height: 60,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginRight: 2,
-          }}
-        >
-          <EmailIcon fontSize="large" style={{ color: "white" }} />
-        </Box>
-        <Box>
-          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-            Email
-          </Typography>
-          <Typography variant="body2">info@indozenglobal.com
-          </Typography>
-        </Box>
-      </Box>
-
-      {/* Website */}
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Box
-          sx={{
-            backgroundColor: "#222",
-            borderRadius: "50%",
-            width: 60,
-            height: 60,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginRight: 2,
-          }}
-        >
-          <LanguageIcon fontSize="large" style={{ color: "white" }} />
-        </Box>
-        <Box>
-          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-            Website
-          </Typography>
-          <Typography variant="body2">www.indozenglobal.com
-          </Typography>
-        </Box>
-      </Box>
+      {cardItem(LocationOnIcon, "Address", "www.indozenglobal.com")}
+      {cardItem(CallIcon, "Contact", "+91 8828281064")}
+      {cardItem(EmailIcon, "Email", "info@indozenglobal.com")}
+      {cardItem(LanguageIcon, "Website", "www.indozenglobal.com")}
     </Box>
   );
 };
