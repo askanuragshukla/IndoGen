@@ -89,7 +89,7 @@ const WhyChooseUsHome = () => {
             px: { xs: 1, sm: 2 },
           }}
         >
-          We specialize in high-quality, handcrafted wooden toys and stylish kids' garments.
+          We specialize in high-quality, Farm Fresh organically grown onion powders and makhanas.
           Ensuring top-notch quality and sustainable sourcing for our customers worldwide.
         </Typography>
 

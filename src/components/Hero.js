@@ -13,8 +13,8 @@ import spicehdimages from './images/spiceshdlg.jpg'
 import flvrmkhana from './images/flvrmkhanahdwlpr.jpg'
 import lotusmkhana from './images/makhanahdimahewlpr.jpg'
 import mkhana2 from './images/makahnahdwlpr2.jpg'
-
-
+import Herobanner1 from './images/Herobanner1.jpg'
+import Herobanner2 from './images/Herobanner2.webp'
 
 
 
@@ -50,15 +50,15 @@ export default function Hero() {
   const content = [
     {
       text: "ABOUT US",
-      backgroundImage: "https://t3.ftcdn.net/jpg/09/90/14/22/360_F_990142251_RnKM29HEOCg3PbkWnSynKL8XHcL9IVPs.jpg",
+      backgroundImage: Herobanner1,
     },
     {
       text: "We are committed to quality, consistency, and customer satisfaction. From sourcing to packaging, every step is governed by strict quality checks to ensure timely delivery and unmatched standards.",
-      backgroundImage: "https://img.freepik.com/premium-photo/toys-collection-isolated-background_488220-2432.jpg?semt=ais_hybrid",
+      backgroundImage: Herobanner1,
     },
     {
       text: "We promise transparency, reliability, and excellence in every trade. With a focus on building lasting partnerships, we aim to be your trusted global sourcing partner",
-      backgroundImage: "https://yadavifood.com/images/product/red_onion_powder1.jpg",
+      backgroundImage: Herobanner2,
     },
     
    
