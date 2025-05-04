@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IndoGen/static/css/main.560f0f2d.css",
-    "main.js": "/IndoGen/static/js/main.fbcc11d1.js",
+    "main.js": "/IndoGen/static/js/main.aa1d59d1.js",
     "static/js/453.a199ec09.chunk.js": "/IndoGen/static/js/453.a199ec09.chunk.js",
     "static/media/walnutlghd.png": "/IndoGen/static/media/walnutlghd.119d2c8e7d90b47428fd.png",
     "static/media/spiceshdlg.jpg": "/IndoGen/static/media/spiceshdlg.4e0b0dff81a0b2fce8a5.jpg",
@@ -26,6 +26,7 @@
     "static/media/makhanahdimahewlpr.jpg": "/IndoGen/static/media/makhanahdimahewlpr.d609c0a3acfd3cc63257.jpg",
     "static/media/RedAndPinkPowder.jpg": "/IndoGen/static/media/RedAndPinkPowder.d8fa1021a36b149876c4.jpg",
     "static/media/makahnahdwlpr2.jpg": "/IndoGen/static/media/makahnahdwlpr2.91fc618f4964956de02b.jpg",
+    "static/media/pinkonionPowder.jpg": "/IndoGen/static/media/pinkonionPowder.631f424ced4776bda9a6.jpg",
     "static/media/FSSAI_Logo.png": "/IndoGen/static/media/FSSAI_Logo.2c30b1466e01e1642169.png",
     "static/media/counter2.png": "/IndoGen/static/media/counter2.5c4999b14e4fd8af9948.png",
     "static/media/counter4.png": "/IndoGen/static/media/counter4.2a4bc2a20c6bb493062d.png",
@@ -35,11 +36,11 @@
     "static/media/slick.woff": "/IndoGen/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/IndoGen/index.html",
     "main.560f0f2d.css.map": "/IndoGen/static/css/main.560f0f2d.css.map",
-    "main.fbcc11d1.js.map": "/IndoGen/static/js/main.fbcc11d1.js.map",
+    "main.aa1d59d1.js.map": "/IndoGen/static/js/main.aa1d59d1.js.map",
     "453.a199ec09.chunk.js.map": "/IndoGen/static/js/453.a199ec09.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.560f0f2d.css",
-    "static/js/main.fbcc11d1.js"
+    "static/js/main.aa1d59d1.js"
   ]
 }
