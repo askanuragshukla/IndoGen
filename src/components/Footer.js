@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Button, Grid, Link, Divider } from '@mui/material';
+import { Box, Typography, Button, Grid, Link as MuiLink, Divider } from '@mui/material';
+import { Link } from 'react-router-dom'; // Use this for routing
 
 const Footer = () => {
   return (
@@ -52,6 +53,8 @@ const Footer = () => {
               padding: '10px 20px',
               borderRadius: 25,
             }}
+            component={Link}
+            to="/contact"
           >
             Contact Us
           </Button>
@@ -66,6 +69,8 @@ const Footer = () => {
               padding: '10px 20px',
               '&:hover': { borderColor: '#1A3F37', color: '#1A3F37' },
             }}
+            component={Link}
+            to="/about-us"
           >
             Learn More
           </Button>
@@ -74,30 +79,37 @@ const Footer = () => {
 
       <Divider sx={{ backgroundColor: '#ffffff', height: '1px' }} />
 
-      <Grid container spacing={4} sx={{ marginTop: '20px' }}>
-        {[
-          { title: 'About Us', links: ['Our Mission', 'Leadership Team', 'Global Presence'] },
-          { title: 'Services', links: ['Import Solutions', 'Export Solutions', 'Logistics Management'] },
-          { title: 'Resources', links: ['Blog & Insights', 'Case Studies'] },
-          { title: 'Contact', links: ['Get in Touch', 'Office Locations'] },
-        ].map((section, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', fontSize: '18px', marginBottom: '10px' }}>
-              {section.title}
-            </Typography>
-            {section.links.map((item) => (
-              <Link
-                key={item}
-                href="#"
+      <Grid container spacing={0} sx={{ marginTop: '20px' }}>
+        <Grid item xs={12}>
+          <Box
+            sx={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              gap: '20px',
+            }}
+          >
+            {[
+              { label: 'Home', path: '/' },
+              { label: 'About Us', path: '/about-us' },
+              // { label: 'Courses', path: '/courses' },
+              { label: 'Products', path: '/products' },
+              { label: 'Contact', path: '/contact' },
+              { label: 'Privacy Policy', path: '/privacy-policy' },
+            ].map((item) => (
+              <MuiLink
+                key={item.label}
+                component={Link}
+                to={item.path}
                 underline="none"
                 color="inherit"
-                sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
+                sx={{ fontSize: '14px' }}
               >
-                {item}
-              </Link>
+                {item.label}
+              </MuiLink>
             ))}
-          </Grid>
-        ))}
+          </Box>
+        </Grid>
       </Grid>
     </Box>
   );

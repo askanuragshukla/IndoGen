@@ -49,7 +49,7 @@ const WhyChooseUsHome = () => {
             fontSize: { xs: "1.8rem", sm: "2rem", md: "2.5rem" },
           }}
         >
-          Bringing the finest <i>Makhana's</i> and <i>Onion Powder's</i> to the world.
+          Bringing the finest <i>Makhana</i> and <i>Onion Powder's</i> to the world.
         </Typography>
 
         <Button

@@ -24,13 +24,13 @@ const Navbar = () => {
               fontSize: "20px",
             }}
           >
-            I N D O G E N
+            I N D O Z E N
           </Typography>
         </Box>
 
         {/* Navigation Links */}
         <Box display="flex" gap={4} sx={{ flexWrap: "wrap", justifyContent: isSmallScreen ? "center" : "flex-start" }}>
-          {["Home", "About Us", "Products", "Privacy Policy"].map((item, index) => (
+          {["Home", "About Us", "Products"].map((item, index) => (
             <Button
               key={index}
               component={Link}

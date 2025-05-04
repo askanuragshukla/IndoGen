@@ -86,7 +86,7 @@ const Carousel = () => {
   const slides = [
     {
       image: Carousel1FlavourMak,
-      title: "Flavourful makhana's in multiple flavours",
+      title: "Flavourful Makhana in multiple flavours",
       description: "Discover peri peri, Pudina, sweet and Tangy Tomato flavours of our high quality makhana.",
     },
     {

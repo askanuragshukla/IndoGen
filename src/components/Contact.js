@@ -195,7 +195,7 @@ const Contact = () => {
   <InfoRow>
     <BusinessIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      Indozen International
+      Indozen Global
     </Typography>
   </InfoRow>
   {/* <InfoRow>

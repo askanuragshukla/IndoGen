@@ -16,7 +16,7 @@ import phoolmakhana from "../components/images/phoolmakhana.jpg";
 import SweetMakhana from "../components/images/SweetMakhana.jpg";
 import RedAndPinkPowder from "../components/images/RedAndPinkPowder.jpg";
 import DehydratedWhiteOnionPowder from "../components/images/DehydratedwhiteOnionPowder.jpg";
-
+import PinkOnionPowder from "../components/images/pinkonionPowder.jpg"
 const productOptions = [
   {
     title: "Peri Peri Makhana",
@@ -49,9 +49,9 @@ const productOptions = [
     img: SweetMakhana,
   },
   {
-    title: "Dehydrated Red & Pink Onion Powder",
+    title: "Dehydrated Red Onion Powder",
     description:
-      "High-quality, organic dehydrated red and pink onion powders.",
+      "High-quality, organic dehydrated red onion powders.",
     img: RedAndPinkPowder,
   },
   {
@@ -59,6 +59,12 @@ const productOptions = [
     description:
       "Premium-grade, organic white onion powder for global trade.",
     img: DehydratedWhiteOnionPowder,
+  },
+  {
+    title: "Dehydrated Pink Onion Powder",
+    description:
+      "Naturally processed pink onion powder, rich in flavor and aroma for diverse culinary applications.",
+    img: PinkOnionPowder,
   },
 ];
 

@@ -23,6 +23,7 @@ import phoolmakhana from "../components/images/phoolmakhana.jpg";
 import SweetMakhana from "../components/images/SweetMakhana.jpg";
 import RedAndPinkPowder from "../components/images/RedAndPinkPowder.jpg";
 import DehydratedWhiteOnionPowder from "../components/images/DehydratedwhiteOnionPowder.jpg";
+import pinkonionpowder from "../components/images/pinkonionPowder.jpg"
 
 const Background = styled(Box)(() => ({
   backgroundImage: `url('https://media.istockphoto.com/id/1366928508/photo/garlic-powder.jpg?s=612x612&w=0&k=20&c=f-CpEY6qMNOIzcx8jKveQRn3jGGDS8JrcRWHAvMkal0=')`,
@@ -243,6 +244,15 @@ const servicesData = [
     image: DehydratedWhiteOnionPowder,
     icon: <RiceBowlIcon />,
   },
+  {
+    id: 8,
+    title: "Dehydrated Pink Onion Powder",
+    description: "Aromatic pink onion powder.",
+    detailedDescription:
+      "Crafted from high-quality pink onions, our Dehydrated Pink Onion Powder delivers a balanced flavor that sits between the sharpness of red onions and the sweetness of white ones. Ideal for culinary professionals and home chefs, it enhances curries, marinades, soups, snacks, and spice mixes with its mild yet distinctive aroma. It's free from artificial colors, flavors, and preservatives—perfect for clean-label cooking.",
+    image: pinkonionpowder, // Ensure you have this image asset imported
+    icon: <RiceBowlIcon />,
+  }
 ];
 
 export default Products;
