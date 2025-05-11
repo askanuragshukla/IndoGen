@@ -6,10 +6,10 @@ import counter3 from "./images/counter3.png";
 import counter4 from "./images/counter4.png";
 
 const stats = [
-  { img: counter1, value: 5, label: "Countries" },
-  { img: counter2, value: 100, label: "Quality Manufacturers" },
-  { img: counter3, value: 100, label: "Products" },
-  { img: counter4, value: 100, label: "Man-Years Experience" },
+  { img: counter1, value: null, label: "Global reach" },
+  { img: counter2, value: null, label: "Trusted Manufacturers" },
+  { img: counter3, value: null, label: "Premium Products" },
+  { img: counter4, value: null, label: "Gaurenteed on Time Shipments" },
 ];
 
 const ExperienceSection = () => {
@@ -55,7 +55,7 @@ const ExperienceSection = () => {
                   fontSize: { xs: "1.5rem", sm: "2rem", md: "2.2rem" },
                 }}
               >
-                {counts[index]}+
+                {counts[index]}
               </Typography>
               <Typography
                 variant="body1"

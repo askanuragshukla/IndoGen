@@ -80,7 +80,7 @@ const Products = () => {
           Our Offerings
         </Typography>
         <Typography variant='body1' style={{ textAlign: 'center', fontWeight: 'bold', marginBottom: 10, color: 'grey', fontFamily: "'Roboto', sans-serif" }}>
-          While we focus on key products, wherein we have our expertise, we are always open to source new & innovative products for our clients, from across all industries. Indozen can procure any product, irrespective of the region / country, as we are backed by a solid sourcing background. We have a solid network & database of suppliers from all geographies. You name it, we source it.
+          While we focus on key products, wherein we have our expertise, we are always open to source new & innovative products for our clients, from across all industries. IndoZen can procure any product, irrespective of the region / country, as we are backed by a solid sourcing background. We have a solid network & database of suppliers from all geographies. You name it, we source it.
         </Typography>
 
         <Grid container spacing={4}>

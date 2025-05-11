@@ -195,7 +195,7 @@ const Contact = () => {
   <InfoRow>
     <BusinessIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      Indozen Global
+      IndoZen Global
     </Typography>
   </InfoRow>
   {/* <InfoRow>
@@ -207,7 +207,7 @@ const Contact = () => {
   <InfoRow>
     <MailOutlineIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-    info@indozenglobal.com
+    info@IndoZenglobal.com
     </Typography>
   </InfoRow>
   <InfoRow>
@@ -219,14 +219,14 @@ const Contact = () => {
   <InfoRow>
     <LocationOnIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      Indozen's office address
+      IndoZen's office address
     </Typography>
   </InfoRow>
   <InfoRow>
     <LanguageSharp />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      <a href="www.indozenglobal.com" style={{ color: "#e0e0e0", textDecoration: "none" }}>
-      www.indozenglobal.com
+      <a href="www.IndoZenglobal.com" style={{ color: "#e0e0e0", textDecoration: "none" }}>
+      www.IndoZenglobal.com
 
       </a>
     </Typography>

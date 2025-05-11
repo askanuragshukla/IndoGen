@@ -54,7 +54,7 @@ const AboutUsHome = () => {
             variant="body1"
             sx={{ mt: 2, mb: 4, fontSize: { xs: "0.95rem", md: "1rem" } }}
           >
-            Indozen Global is a dynamic exporter dedicated to delivering
+            IndoZen Global is a dynamic exporter dedicated to delivering
             high-quality food products across the globe. Based in India, we
             specialize in a wide range of onion powders and premium Makhana
             varieties, meeting international market demands with integrity and
@@ -140,7 +140,7 @@ const AboutUsHome = () => {
             variant="h4"
             sx={{ fontWeight: "bold", color: "#E0A800", letterSpacing: "0.2em" }}
           >
-            INDOZEN
+            IndoZen
           </Typography>
         </motion.div>
       </Box>

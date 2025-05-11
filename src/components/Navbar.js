@@ -11,22 +11,36 @@ const Navbar = () => {
     <AppBar position="static" sx={{ backgroundColor: "#121212", padding: "0.5rem 1rem" }}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexDirection: isSmallScreen ? "column" : "row" }}>
         {/* Logo and Brand Name */}
-        <Box display="flex" alignItems="center" gap={1} sx={{ mb: isSmallScreen ? 2 : 0 }}>
-          <img src={sadgurulogo} alt="Sadguru Logo" style={{ width: "40px", height: "40px", borderRadius: "50%" }} />
-          <Typography
-            variant="h6"
-            sx={{
-              color: "white",
-              fontWeight: "bold",
-              display: "flex",
-              alignItems: "center",
-              fontFamily: "Inter, sans-serif",
-              fontSize: "20px",
-            }}
-          >
-            I N D O Z E N
-          </Typography>
-        </Box>
+        <Box display="flex" flexDirection="column" alignItems="center" gap={0.5} sx={{ mb: isSmallScreen ? 2 : 0 }}>
+  <Box display="flex" alignItems="center" gap={1}>
+    <img src={sadgurulogo} alt="Sadguru Logo" style={{ width: "40px", height: "40px", borderRadius: "50%" }} />
+    <Typography
+      variant="h6"
+      sx={{
+        color: "white",
+        fontWeight: "bold",
+        display: "flex",
+        alignItems: "center",
+        fontFamily: "Inter, sans-serif",
+        fontSize: "20px",
+      }}
+    >
+      IndoZen GLOBAL
+    </Typography>
+  </Box>
+  <Typography
+    variant="caption"
+    sx={{
+      color: "#BBBBBB",
+      fontFamily: "Inter, sans-serif",
+      fontSize: "12px",
+      textAlign: "center",
+      lineHeight: 1,
+    }}
+  >
+    SEAMLESS TRADE BEYOND BORDERS
+  </Typography>
+</Box>
 
         {/* Navigation Links */}
         <Box display="flex" gap={4} sx={{ flexWrap: "wrap", justifyContent: isSmallScreen ? "center" : "flex-start" }}>
