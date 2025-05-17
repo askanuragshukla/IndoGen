@@ -95,9 +95,9 @@ const About = ({setActivePage}) => {
             <strong>“Nothing, but the Best”</strong>, and this ideology is percolated across our business processes. We aim to provide a trustworthy & faithful relationship with all our suppliers, buyers, importers, exporters, and channel partners.
           </Typography>
 
-          <Typography variant="body1" paragraph>
+          {/* <Typography variant="body1" paragraph>
             IndoZen  is a reputed exporter from India, with excellent sourcing skills developed over decades with the best manufacturers. We can source a wide range of product categories, including <strong>Natural Stones (Granite & Marbles), Spices, Food grains & pulses, Building materials, and Engineering products</strong>.
-          </Typography>
+          </Typography> */}
 
           <Typography variant="body1" fontWeight="bold" color="error">
             IndoZen  does <strong>NOT</strong> export any animal meat, produce, or by-products.
@@ -107,6 +107,7 @@ const About = ({setActivePage}) => {
        
         
       </Container>
+      <OurServices />
     
       {/* <RecentProject /> */}
     </div>

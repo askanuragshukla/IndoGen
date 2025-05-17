@@ -3,33 +3,38 @@ import { Box, Typography, Grid, Paper } from "@mui/material";
 
 const OurServices = () => {
   const services = [
-   
+    {
+      id: 1,
+      title: "Who We Are",
+      description:
+        "IndoZen Global is a dynamic India-based exporter dedicated to delivering premium-quality food products across international markets.",
+      icon: "🌏",
+    },
     {
       id: 2,
-      title: "Wooden Toys",
+      title: "What We Offer",
       description:
-        "Our toy collection meets international safety standards, bringing joy and fun to children worldwide with zero health hazards.",
-      icon: "🧸",
+        "Specializing in flavored Makhana and high-grade Onion & Garlic powders, we bring authentic Indian taste to the global table.",
+      icon: "🍽️",
     },
     {
       id: 3,
-      
-      title: "Finest Quality of Garlic & Onion powders",
+      title: "Our Legacy",
       description:
-        "We source and export the best farm fresh Garlic and Onion powders, delivering farm-to-market excellence worldwide.",
-        icon: "🧅 🧄",
+        "Backed by over 30 years of expertise in sourcing, merchandising, and global trade, we are a trusted name in the export industry.",
+      icon: "📦",
     },
     {
       id: 4,
-      title: "Spices",
+      title: "Our Promise",
       description:
-        "Our range of aromatic and high-quality spices adds authentic flavors to cuisines around the world.",
-      icon: "🌶️",
+        "With a passionate and hands-on team, we consistently deliver quality, integrity, and excellence — exceeding expectations every time.",
+      icon: "🤝",
     },
   ];
 
   return (
-    <Box sx={{ padding: 4, background: 'linear-gradient(135deg, #2E4A30, #1E3A20)', color: "#fff" }}>
+    <Box sx={{ padding: 4, background: 'linear-gradient(135deg,rgb(0, 0, 0),rgb(0, 0, 0))', color: "#fff" }}>
       {/* Header Section */}
       <Typography
         variant="h6"
@@ -40,16 +45,16 @@ const OurServices = () => {
         Our Services
       </Typography>
       <Typography
-        variant="h4"
-        align="center"
-        gutterBottom
-        sx={{ fontWeight: "bold" }}
-      >
-        Global Trade Excellence in Toys, Onion powders, Garlic Powders & Spices
-      </Typography>
-      <Typography align="center">
-        Unispeherexim  is committed to delivering high-quality products with seamless import and export services.
-      </Typography>
+  variant="h4"
+  align="center"
+  gutterBottom
+  sx={{ fontWeight: "bold" }}
+>
+  Premium Export Solutions in Makhana, Onion & Garlic Powders
+</Typography>
+<Typography align="center">
+  IndoZen Global is committed to delivering authentic Indian food products with unmatched quality, reliability, and global reach.
+</Typography>
 
       {/* Services Grid */}
       <Grid container spacing={4} sx={{ marginTop: 4 }}>

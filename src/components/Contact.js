@@ -8,10 +8,14 @@ import {
   Box,
   Paper,
   Avatar,
+  Link
 } from "@mui/material";
 import { keyframes, styled } from "@mui/system";
 import BusinessIcon from "@mui/icons-material/Business";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { LanguageSharp, MailLock, MailOutline, Person2Rounded } from "@mui/icons-material";
@@ -204,18 +208,13 @@ const Contact = () => {
       Owner Name (CEO)
     </Typography>
   </InfoRow> */}
-  <InfoRow>
+  {/* <InfoRow>
     <MailOutlineIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
     info@IndoZenglobal.com
     </Typography>
-  </InfoRow>
-  <InfoRow>
-    <PhoneInTalkIcon />
-    <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      +91  8828281064
-    </Typography>
-  </InfoRow>
+  </InfoRow> */}
+  
   <InfoRow>
     <LocationOnIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
@@ -231,6 +230,55 @@ const Contact = () => {
       </a>
     </Typography>
   </InfoRow>
+  <InfoRow>
+        <MailOutlineIcon sx={{ color: '#e0e0e0' }} />
+        <Link 
+          href="mailto:info@IndoZenglobal.com" 
+          underline="hover" 
+          sx={{ color: '#e0e0e0' }}
+        >
+          info@IndoZenglobal.com
+        </Link>
+      </InfoRow>
+
+      <InfoRow>
+        <FacebookIcon sx={{ color: '#e0e0e0', cursor: 'pointer' }} />
+        <Link 
+          href="https://www.facebook.com/yourFacebookPage" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          underline="hover" 
+          sx={{ color: '#e0e0e0' }}
+        >
+          Visit our Facebook Page
+        </Link>
+      </InfoRow>
+
+      <InfoRow>
+        <LinkedInIcon sx={{ color: '#e0e0e0', cursor: 'pointer' }} />
+        <Link 
+          href="https://www.linkedin.com/in/yourLinkedInProfile" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          underline="hover" 
+          sx={{ color: '#e0e0e0' }}
+        >
+          Visit our LinkedIn Page
+        </Link>
+      </InfoRow>
+
+      <InfoRow>
+        <WhatsAppIcon sx={{ color: '#25D366', cursor: 'pointer' }} />
+        <Link 
+          href="https://wa.me/918828281064" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          underline="hover" 
+          sx={{ color: '#e0e0e0' }}
+        >
+          +91 8828281064
+        </Link>
+      </InfoRow>
 </GlassCard>
           </Grid>
 
@@ -249,7 +297,7 @@ const Contact = () => {
               >
                 Send Us a Message
               </Typography>
-              <form>
+              <form onSubmit={sendEmail}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} sm={6}>
                     <TextField
@@ -386,7 +434,7 @@ const Contact = () => {
                     />
                   </Grid>
                   <Grid item xs={12}>
-                    <StyledButton variant="contained" type="submit">
+                    <StyledButton variant="contained" type="submit" >
                       Submit
                     </StyledButton>
                   </Grid>
