@@ -25,7 +25,7 @@ const Navbar = () => {
         fontSize: "20px",
       }}
     >
-      IndoZen GLOBAL
+      Indozen Global
     </Typography>
   </Box>
   <Typography
