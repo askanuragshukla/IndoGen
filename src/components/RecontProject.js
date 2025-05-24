@@ -6,19 +6,19 @@ const testimonials = [
     name: "Rajesh Mehta",
     role: "Owner, Mehta Kids Wear (India)",
     avatar: "https://randomuser.me/api/portraits/men/10.jpg",
-    text: "IndoZen has been a game changer for our business. Their high-quality kids' garments and smooth delivery process have helped us scale tremendously!",
+    text: "Indozen has been a game changer for our business. Their high-quality kids' garments and smooth delivery process have helped us scale tremendously!",
   },
   {
     name: "Sophia Carter",
     role: "Retailer, FreshFarm Organics (USA)",
     avatar: "https://randomuser.me/api/portraits/women/15.jpg",
-    text: "The mangoes we received were absolutely fresh and delicious! IndoZen's packaging and timely delivery exceeded our expectations.",
+    text: "The mangoes we received were absolutely fresh and delicious! Indozen's packaging and timely delivery exceeded our expectations.",
   },
   {
     name: "Amit Sharma",
     role: "CEO, SpiceWorld Exports (India)",
     avatar: "https://randomuser.me/api/portraits/men/20.jpg",
-    text: "We’ve been sourcing premium spices from IndoZen for years. Their commitment to quality and authenticity is unmatched!",
+    text: "We’ve been sourcing premium spices from Indozen for years. Their commitment to quality and authenticity is unmatched!",
   },
  
 ];
@@ -56,7 +56,7 @@ const RecentProject = () => {
     >
       <Typography variant="h4" style={{ fontWeight: "bold", marginBottom: "20px",color:'white' }}>
         What Our Clients Says about Us<br />
-        <span style={{ color: "#E0A800" }}>IndoZen's Global Trust</span>
+        <span style={{ color: "#E0A800" }}>Indozen's Global Trust</span>
       </Typography>
 
       <Box

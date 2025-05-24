@@ -35,9 +35,7 @@ const AboutUsHome = () => {
         }}
       >
         <motion.div initial="hidden" animate="visible" variants={textVariants}>
-          <Typography variant="subtitle2" gutterBottom>
-            Experience
-          </Typography>
+    
         </motion.div>
 
         <motion.div initial="hidden" animate="visible" variants={textVariants}>
@@ -54,7 +52,7 @@ const AboutUsHome = () => {
             variant="body1"
             sx={{ mt: 2, mb: 4, fontSize: { xs: "0.95rem", md: "1rem" } }}
           >
-            IndoZen Global is a dynamic exporter dedicated to delivering
+            Indozen Global is a dynamic exporter dedicated to delivering
             high-quality food products across the globe. Based in India, we
             specialize in a wide range of onion powders and premium Makhana
             varieties, meeting international market demands with integrity and
@@ -67,7 +65,7 @@ const AboutUsHome = () => {
             variant="body1"
             sx={{ mt: 2, mb: 4, fontSize: { xs: "0.95rem", md: "1rem" } }}
           >
-            With over three decades of experience in sourcing, merchandising,
+            With over new experience in sourcing, merchandising,
             buying, and trading commodities across various categories, we are a
             leading merchant exporter. Our team of passionate business
             professionals takes a hands-on approach to business, consistently
@@ -77,7 +75,7 @@ const AboutUsHome = () => {
 
         {/* Stats Section */}
         <Grid container spacing={4} alignItems="center">
-          {[
+          {/* {[
             { value: 50, label: "Countries We Export To" },
             { value: 1000, label: "Happy Clients Worldwide" },
             { value: 500, label: "Successful Shipments" },
@@ -98,7 +96,7 @@ const AboutUsHome = () => {
                 </Typography>
               </motion.div>
             </Grid>
-          ))}
+          ))} */}
 
           {/* About Us Button */}
           <Grid item xs={12} sm={4}>
@@ -140,7 +138,7 @@ const AboutUsHome = () => {
             variant="h4"
             sx={{ fontWeight: "bold", color: "#E0A800", letterSpacing: "0.2em" }}
           >
-            IndoZen
+            Indozen
           </Typography>
         </motion.div>
       </Box>

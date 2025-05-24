@@ -7,7 +7,7 @@ const OurServices = () => {
       id: 1,
       title: "Who We Are",
       description:
-        "IndoZen Global is a dynamic India-based exporter dedicated to delivering premium-quality food products across international markets.",
+        "Indozen Global is a dynamic India-based exporter dedicated to delivering premium-quality food products across international markets.",
       icon: "🌏",
     },
     {
@@ -53,7 +53,7 @@ const OurServices = () => {
   Premium Export Solutions in Makhana, Onion & Garlic Powders
 </Typography>
 <Typography align="center">
-  IndoZen Global is committed to delivering authentic Indian food products with unmatched quality, reliability, and global reach.
+  Indozen Global is committed to delivering authentic Indian food products with unmatched quality, reliability, and global reach.
 </Typography>
 
       {/* Services Grid */}

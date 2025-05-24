@@ -199,7 +199,7 @@ const Contact = () => {
   <InfoRow>
     <BusinessIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      IndoZen Global
+      Indozen Global
     </Typography>
   </InfoRow>
   {/* <InfoRow>
@@ -211,21 +211,21 @@ const Contact = () => {
   {/* <InfoRow>
     <MailOutlineIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-    info@IndoZenglobal.com
+    info@Indozenglobal.com
     </Typography>
   </InfoRow> */}
   
   <InfoRow>
     <LocationOnIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      IndoZen's office address
+      Indozen's office address
     </Typography>
   </InfoRow>
   <InfoRow>
     <LanguageSharp />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      <a href="www.IndoZenglobal.com" style={{ color: "#e0e0e0", textDecoration: "none" }}>
-      www.IndoZenglobal.com
+      <a href="www.Indozenglobal.com" style={{ color: "#e0e0e0", textDecoration: "none" }}>
+      www.Indozenglobal.com
 
       </a>
     </Typography>
@@ -233,11 +233,11 @@ const Contact = () => {
   <InfoRow>
         <MailOutlineIcon sx={{ color: '#e0e0e0' }} />
         <Link 
-          href="mailto:info@IndoZenglobal.com" 
+          href="mailto:info@Indozenglobal.com" 
           underline="hover" 
           sx={{ color: '#e0e0e0' }}
         >
-          info@IndoZenglobal.com
+          info@Indozenglobal.com
         </Link>
       </InfoRow>
 
