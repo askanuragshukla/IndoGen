@@ -104,7 +104,7 @@ const BusinessCard = () => {
       {cardItem(
         EmailIcon,
         "Email",
-        "info@indozenglobal.com",
+        "info@IndoZenglobal.com",
         "mailto:info@indozenglobal.com"
       )}
       {cardItem(

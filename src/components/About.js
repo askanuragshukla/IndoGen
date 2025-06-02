@@ -54,16 +54,16 @@ const About = ({setActivePage}) => {
         {/* Left Side - Text Content */}
         <Grid item xs={12} md={6}>
           <Typography variant="h5" fontWeight="bold">
-            Indozen 
+            IndoZen 
           </Typography>
           <Typography variant="body1" paragraph>
-            Indozen  is a reputed & reliable Merchant Exporter, established and backed by a 3rd generation business house. We believe that business grows on faith & trust, along with commitment & passion. We export products with a complete check on Quality, Vendor Scrutiny, and Traceability. We offer products/produce to our clients, with a complete check on all parameters of product specifications. Our experienced team is equipped to source the best products at the best price in the best timelines.
+            IndoZen  is a reputed & reliable Merchant Exporter, established and backed by a 3rd generation business house. We believe that business grows on faith & trust, along with commitment & passion. We export products with a complete check on Quality, Vendor Scrutiny, and Traceability. We offer products/produce to our clients, with a complete check on all parameters of product specifications. Our experienced team is equipped to source the best products at the best price in the best timelines.
           </Typography>
           <Typography variant="body1" paragraph>
             We have new experience in sourcing, merchandising, buying & trading commodities across various product categories. As a leading Merchant Exporter, we are a team of passionate business professionals, with a hands-on approach towards business. Our endeavor is to keep up to the promise & deliver beyond satisfaction.
           </Typography>
           <Typography variant="body1">
-            <strong>Indozen </strong> is a perfect blend of experienced professionals with solid experience in technical, commercial, trading/logistics, and financial backgrounds. What sets <strong>Indozen </strong> apart is that we provide a price advantage, personalized service, and also encourage orders of all sizes & volumes.
+            <strong>IndoZen </strong> is a perfect blend of experienced professionals with solid experience in technical, commercial, trading/logistics, and financial backgrounds. What sets <strong>IndoZen </strong> apart is that we provide a price advantage, personalized service, and also encourage orders of all sizes & volumes.
           </Typography>
         </Grid>
 
@@ -72,7 +72,7 @@ const About = ({setActivePage}) => {
           <Box
             component="img"
             src={aboutusbnanner} // Replace with actual image path
-            alt="Indozen "
+            alt="IndoZen "
             sx={{
               width: "100%",
               height: "auto",
@@ -91,16 +91,16 @@ const About = ({setActivePage}) => {
           </Typography>
 
           <Typography variant="body1" paragraph>
-            At Indozen , our ideology (management mantra) is{" "}
+            At IndoZen , our ideology (management mantra) is{" "}
             <strong>“Nothing, but the Best”</strong>, and this ideology is percolated across our business processes. We aim to provide a trustworthy & faithful relationship with all our suppliers, buyers, importers, exporters, and channel partners.
           </Typography>
 
           {/* <Typography variant="body1" paragraph>
-            Indozen  is a reputed exporter from India, with excellent sourcing skills developed over decades with the best manufacturers. We can source a wide range of product categories, including <strong>Natural Stones (Granite & Marbles), Spices, Food grains & pulses, Building materials, and Engineering products</strong>.
+            IndoZen  is a reputed exporter from India, with excellent sourcing skills developed over decades with the best manufacturers. We can source a wide range of product categories, including <strong>Natural Stones (Granite & Marbles), Spices, Food grains & pulses, Building materials, and Engineering products</strong>.
           </Typography> */}
 
           <Typography variant="body1" fontWeight="bold" color="error">
-            Indozen  does <strong>NOT</strong> export any animal meat, produce, or by-products.
+            IndoZen  does <strong>NOT</strong> export any animal meat, produce, or by-products.
           </Typography>
         </Grid>
         
