@@ -199,7 +199,7 @@ const Contact = () => {
   <InfoRow>
     <BusinessIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      IndoZen Global
+      Indozen Global
     </Typography>
   </InfoRow>
   {/* <InfoRow>
@@ -218,7 +218,7 @@ const Contact = () => {
   <InfoRow>
     <LocationOnIcon />
     <Typography variant="body1" sx={{ color: "#e0e0e0" }}>
-      IndoZen's office address
+      Indozen's office address
     </Typography>
   </InfoRow>
   <InfoRow>
